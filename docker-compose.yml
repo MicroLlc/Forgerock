@@ -1,0 +1,14 @@
+services:
+  openam:
+    image: forgerock-repo-local/openam:7.5.0
+    ports:
+      - "8080:8080"
+
+  openidm:
+    image: forgerock-repo-local/openidm:7.5.0
+    ports:
+      - "8081:8081"
+  markdown-viwer:
+    image: forgerock-repo-local/markdown-viewer:0.0.1
+    ports:
+      - "8000:8000"
