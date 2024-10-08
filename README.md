@@ -27,12 +27,12 @@ This will initiate the Docker Compose process and start the OpenAM and OpenIDM c
 Once the services are up and running, you can access them using the following URLs:
 
 - **OpenAM**: [http://localhost:8080/openam](http://localhost:8080/openam)
-- **OpenIDM**: [http://localhost:8080/openidm](http://localhost:8080/openidm)
+- **OpenIDM**: [http://localhost:8081/#/login](http://localhost:8081/#/login)
 
 #### Port Information
 
 - **OpenAM** runs on port `8080`
-- **OpenIDM** runs on port `8080`
+- **OpenIDM** runs on port `8081`
 
 Make sure that these ports are not in use by any other applications before starting the services.
 
