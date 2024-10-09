@@ -1,0 +1,22 @@
+#
+# Copyright 2022 ForgeRock AS. All Rights Reserved
+#
+# Use of this code requires a commercial software license with ForgeRock AS.
+# or with one of its affiliates. All use shall be exclusively subject
+# to such license between the licensee and ForgeRock AS.
+#
+dn: cn=schema
+attributeTypes: ( 1.3.6.1.4.1.36733.2.2.1.14
+  NAME 'boundDevices'
+  DESC 'Bound Device JSON data'
+  SYNTAX 1.3.6.1.4.1.36733.2.1.3.1
+  X-STABILITY 'Internal'
+  X-ORIGIN 'OpenAM' )
+objectClasses: ( 1.3.6.1.4.1.36733.2.2.2.14
+  NAME 'boundDevicesContainer'
+  DESC 'Class containing bound device'
+  SUP top
+  AUXILIARY
+  MAY ( boundDevices )
+  X-STABILITY 'Internal'
+  X-ORIGIN 'OpenAM' )

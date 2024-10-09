@@ -1,0 +1,204 @@
+{
+    "artifact": {
+        "groupId": "org.forgerock.opendj",
+        "artifactId": "opendj-server",
+        "version": "7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec"
+    },
+    "copyrights": [
+        "Copyright 2010-2024 ForgeRock AS",
+        "Copyright 2002-2018 Oracle and",
+        "Copyright 2016-2017 Clifton Labs",
+        "Copyright 2013-2017 Dropwizard contributors",
+        "Copyright 2011-2012 profiq, s.r.o.",
+        "Copyright 2002-2011 Sun Microsystems, Inc",
+        "Copyright 2000-2011 The Legion Of The Bouncy Castle",
+        "Copyright 2006 Damien Miller",
+        "Copyright 1984-1988 AT",
+        "Portions Copyright 2010-2024 ForgeRock AS",
+        "Portions Copyright 2016-2018 David Karnok",
+        "Portions Copyright 2016 present, RxJava Contributors",
+        "Portions Copyright 2015 Edan Idzerda",
+        "Portions Copyright 2014 Emidio Stani",
+        "Portions Copyright 2012-2014 Manuel Gaupp",
+        "Portions Copyright 2014 The Apache Software Foundation",
+        "Portions Copyright 2012 Dariusz Janny",
+        "Portions Copyright 2011 profiq, s.r.o.",
+        "Portions Copyright 2009 Parametric Technology Corporation",
+        "Portions Copyright 2006-2008 Sun Microsystems, Inc",
+        "Portions Copyright 2006-2007 Brighton Consulting, Inc"
+    ],
+    "dependencies": {
+        "api-descriptor-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2015-2024 ForgeRock AS"
+        ],
+        "aws-s3-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Portions Copyright 2022 ForgeRock AS"
+        ],
+        "azureblob-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Portions Copyright 2022 ForgeRock AS"
+        ],
+        "chf-client-apache-async-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2015-2023 ForgeRock AS"
+        ],
+        "chf-client-apache-common-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2015-2021 ForgeRock AS"
+        ],
+        "chf-http-core-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2012-2024 ForgeRock AS",
+            "Copyright 2009-2024 Sun Microsystems, Inc",
+            "Copyright 2010-2011 ApexIdentity Inc",
+            "Portions Copyright 2011-2024 ForgeRock AS",
+            "Portions Copyright 2010-2011 ApexIdentity Inc"
+        ],
+        "chf-oauth2-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2014-2024 ForgeRock AS"
+        ],
+        "config-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2017-2024 ForgeRock AS"
+        ],
+        "forgerock-audit-core-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2013-2024 ForgeRock AS",
+            "Copyright 2013 Cybernetica AS",
+            "Copyright 2006-2008 Sun Microsystems, Inc",
+            "Portions Copyright 2013-2019 ForgeRock AS"
+        ],
+        "forgerock-audit-handler-csv-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2015-2024 ForgeRock AS"
+        ],
+        "forgerock-audit-handler-elasticsearch-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2015-2024 ForgeRock AS"
+        ],
+        "forgerock-audit-handler-jdbc-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2015-2024 ForgeRock AS",
+            "Portions Copyright 2016-2024 Nomura Research Institute, Ltd"
+        ],
+        "forgerock-audit-handler-jms-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2016-2021 ForgeRock AS"
+        ],
+        "forgerock-audit-handler-json-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2016-2024 ForgeRock AS"
+        ],
+        "forgerock-audit-handler-json-stdout-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2018-2020 ForgeRock AS"
+        ],
+        "forgerock-audit-handler-splunk-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2016-2020 ForgeRock AS"
+        ],
+        "forgerock-audit-handler-syslog-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2015-2021 ForgeRock AS",
+            "Copyright 2013 Cybernetica AS",
+            "Portions Copyright 2014-2022 ForgeRock AS"
+        ],
+        "forgerock-audit-json-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2015-2019 ForgeRock AS"
+        ],
+        "forgerock-util-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2011-2024 ForgeRock AS",
+            "Copyright 2014-2015 Stack overflow users",
+            "Copyright 2010-2011 ApexIdentity Inc",
+            "Portions Copyright 2011-2023 ForgeRock AS"
+        ],
+        "google-cloud-storage-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Portions Copyright 2022 ForgeRock AS"
+        ],
+        "googlecloud-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Portions Copyright 2022 ForgeRock AS"
+        ],
+        "jclouds-blobstore-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Portions Copyright 2022 ForgeRock AS"
+        ],
+        "jclouds-core-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Portions Copyright 2022-2023 ForgeRock AS"
+        ],
+        "json-resource-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2011-2024 ForgeRock AS"
+        ],
+        "json-resource-http-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2012-2024 ForgeRock AS"
+        ],
+        "json-schema-core-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2011-2021 ForgeRock AS"
+        ],
+        "json-web-token-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2011-2024 ForgeRock AS"
+        ],
+        "monitoring-api-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2018-2024 ForgeRock AS",
+            "Copyright 2017 Pivotal Software, Inc",
+            "Portions Copyright 2018-2023 ForgeRock AS"
+        ],
+        "monitoring-dropwizard-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2018-2021 ForgeRock AS",
+            "Copyright 2017 Pivotal Software, Inc",
+            "Portions Copyright 2018 ForgeRock AS"
+        ],
+        "monitoring-http-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2017-2021 ForgeRock AS",
+            "Copyright 2016-2018 Prometheus contributors",
+            "Portions Copyright 2018-2024 ForgeRock AS"
+        ],
+        "monitoring-json-resource-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2017-2024 ForgeRock AS"
+        ],
+        "oauth-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Portions Copyright 2022 ForgeRock AS"
+        ],
+        "opendj-cli-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Copyright 2013-2024 ForgeRock AS",
+            "Copyright 2006-2010 Sun Microsystems, Inc",
+            "Portions Copyright 2011-2024 ForgeRock AS",
+            "Portions Copyright 2011 Nemanja Lukic",
+            "Portions Copyright 2009 Parametric Technology Corporation"
+        ],
+        "opendj-config-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Copyright 2011-2024 ForgeRock AS",
+            "Copyright 2006-2010 Sun Microsystems, Inc",
+            "Portions Copyright 2010-2024 ForgeRock AS",
+            "Portions Copyright 2015 Edan Idzerda",
+            "Portions Copyright 2012-2014 Manuel Gaupp",
+            "Portions Copyright 2012 profiq, s.r.o.",
+            "Portions Copyright 2007-2010 Sun Microsystems, Inc"
+        ],
+        "opendj-core-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Copyright 2011-2024 ForgeRock AS",
+            "Copyright 2016 present, RxJava Contributors",
+            "Copyright 2013-2014 Manuel Gaupp",
+            "Copyright 2006-2011 Sun Microsystems, Inc",
+            "Portions Copyright 2011-2024 ForgeRock AS",
+            "Portions Copyright 2016 Matthew Stevenson",
+            "Portions Copyright 2012-2014 Manuel Gaupp",
+            "Portions Copyright 2009 D. J. Hagberg, Millibits Consulting, Inc"
+        ],
+        "opendj-ldap-toolkit-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Copyright 2011-2024 ForgeRock AS",
+            "Copyright 2006-2010 Sun Microsystems, Inc",
+            "Portions Copyright 2011-2024 ForgeRock AS"
+        ],
+        "opendj-parent-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Copyright 2011-2024 ForgeRock AS"
+        ],
+        "opendj-rest2ldap-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Copyright 2012-2024 ForgeRock AS",
+            "Copyright 2016 present David Karnok",
+            "Portions Copyright 2023-2024 ForgeRock AS"
+        ],
+        "s3-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Portions Copyright 2022 ForgeRock AS"
+        ],
+        "secrets-api-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2017-2024 ForgeRock AS"
+        ],
+        "secrets-backend-keystore-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2017-2024 ForgeRock AS"
+        ],
+        "secrets-backend-propertyresolver-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2018-2024 ForgeRock AS"
+        ],
+        "security-26.5.1-20240706102221-a7bab0bad64e16311b47412f5eb05680616dfae3": [
+            "Copyright 2013-2024 ForgeRock AS"
+        ],
+        "sts-7.5.1-20240808151121-d43482b24ad96bf845412d3dbb2eba542c4e22ec": [
+            "Portions Copyright 2022 ForgeRock AS"
+        ]
+    }
+}
