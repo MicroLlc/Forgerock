@@ -17,9 +17,18 @@ ENV DEPLOYMENT_ID_PASSWORD=password123-test
 ENV HOSTNAME=localhost
 
 # Expose LDAP and LDAPS ports
-EXPOSE 1389 1636
+EXPOSE 1389 1636 4444 8080 8443 8989
 
-RUN export DEPLOYMENT_ID=$(/opt/opendj/bin/dskeymgr create-deployment-id --deploymentIdPassword $DEPLOYMENT_ID_PASSWORD)
+# Run the command and check for errors
+RUN /opt/opendj/bin/dskeymgr create-deployment-id --outputfile deployement_id.txt --deploymentIdPassword "$DEPLOYMENT_ID_PASSWORD" && \
+    echo "Deployment ID stored in deployement_id.txt" && \
+    cat deployement_id.txt
+
+# Read the deployment ID and set it as an environment variable
+RUN DEPLOYMENT_ID=$(cat deployement_id.txt) && \
+    echo "Setting DEPLOYMENT_ID environment variable" && \
+    echo "DEPLOYMENT_ID=${DEPLOYMENT_ID}" >> /etc/environment
+
 # Run the OpenDJ setup when the container starts
 CMD ["/bin/bash", "-c", " \
     source /etc/environment && \
@@ -33,5 +42,5 @@ CMD ["/bin/bash", "-c", " \
     --rootUserPassword \"$ROOT_USER_PASSWORD\" \
     --deploymentIdPassword \"$DEPLOYMENT_ID_PASSWORD\" \
     --acceptLicense && \
-    /opt/opendj/set-admin-password --password \"$LDAP_ADMIN_PASSWORD\" && \
-    /opt/opendj/start-ds"]
+    /opt/opendj/bin/start-ds"]
+
