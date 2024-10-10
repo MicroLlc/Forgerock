@@ -33,14 +33,25 @@ RUN DEPLOYMENT_ID=$(cat deployement_id.txt) && \
 CMD ["/bin/bash", "-c", " \
     source /etc/environment && \
     echo \"Deploying with:\n  Deployment ID: $DEPLOYMENT_ID\n  Hostname: $HOSTNAME\n  Admin Password: $ROOT_USER_PASSWORD\" && \
-    /opt/opendj/setup \
-    --adminConnectorPort 4444 \
-    --ldapsPort 636 \
-    --enableStartTLS \
+   /opt/opendj/setup \
+    --instancePath /opt/opendj \
+    --serverId forgerock-dev \
     --deploymentId \"$DEPLOYMENT_ID\" \
-    --hostname \"$HOSTNAME\" \
-    --rootUserPassword \"$ROOT_USER_PASSWORD\" \
     --deploymentIdPassword \"$DEPLOYMENT_ID_PASSWORD\" \
-    --acceptLicense && \
-    /opt/opendj/bin/start-ds"]
+    --rootUserDn uid=admin \
+    --rootUserPassword \"$ROOT_USER_PASSWORD\" \
+    --monitorUserDn uid=Monitor \
+    --monitorUserPassword \"$DEPLOYMENT_ID_PASSWORD\" \
+    --hostname \"$HOSTNAME\" \
+    --adminConnectorPort 4444 \
+    --ldapPort 389 \
+    --ldapsPort 636 \
+    --httpPort 8082 \
+    --httpsPort 8443 \
+    --replicationPort 8989 \
+    --enableStartTLS \
+    --acceptLicense"]
+
+HEALTHCHECK --interval=30s --timeout=5s CMD /opt/opendj/bin/status || exit 1
+
 
