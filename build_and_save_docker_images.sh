@@ -6,15 +6,18 @@ initial_dir=$(pwd)
 # Define an array with the directory paths (update with actual paths)
 directories=(
     "$initial_dir/java-17"   # Adjust the paths to be absolute or relative to the initial directory
+    "$initial_dir/tomcat-9_0"
     "$initial_dir/openam"
     "$initial_dir/openidm"
     "$initial_dir/markdown-viewer"
+
 )
 
 # Define an array with image names corresponding to the directories
 remote_registry=forgerock-repo-local
 image_names=(
     "$remote_registry/java-17:latest"
+    "$remote_registry/tomcat:9.0"
     "$remote_registry/openam:7.5.0"
     "$remote_registry/openidm:7.5.0"
     "$remote_registry/markdown-viewer:0.0.1"

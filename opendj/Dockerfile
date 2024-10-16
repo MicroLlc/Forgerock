@@ -29,10 +29,12 @@ RUN DEPLOYMENT_ID=$(cat deployement_id.txt) && \
     echo "Setting DEPLOYMENT_ID environment variable" && \
     echo "DEPLOYMENT_ID=${DEPLOYMENT_ID}" >> /etc/environment
 
+HEALTHCHECK --interval=30s --timeout=5s CMD /opt/opendj/bin/status || exit 1
+
 # Run the OpenDJ setup when the container starts
 CMD ["/bin/bash", "-c", " \
     source /etc/environment && \
-    echo \"Deploying with:\n  Deployment ID: $DEPLOYMENT_ID\n  Hostname: $HOSTNAME\n  Admin Password: $ROOT_USER_PASSWORD\" && \
+    echo \"Deploying with:\n  Deployment ID: $DEPLOYMENT_ID\n  Hostname: $HOSTNAME\n  Admin Password: $ROOT_USER_PASSWORD\n  Deployment Password: $DEPLOYMENT_ID_PASSWORD\n  Hostname: $HOSTNAME\" && \
    /opt/opendj/setup \
     --instancePath /opt/opendj \
     --serverId forgerock-dev \
@@ -52,6 +54,5 @@ CMD ["/bin/bash", "-c", " \
     --enableStartTLS \
     --acceptLicense"]
 
-HEALTHCHECK --interval=30s --timeout=5s CMD /opt/opendj/bin/status || exit 1
 
 

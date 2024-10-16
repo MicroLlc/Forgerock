@@ -1,5 +1,5 @@
 # Use Tomcat as the base image
-FROM tomcat:9.0
+FROM forgerock-repo-local/tomcat:9.0
 
 # Set environment variables
 ENV OPENAM_HOME=/usr/local/tomcat/webapps/openam
