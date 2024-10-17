@@ -46,6 +46,7 @@ We have provided two essential scripts for managing Docker images:
 This project uses the following software versions:
 
 - **OpenJDK**: `17`
+- **Tomcat**: `9.0.96`
 - **OpenAM**: `7.5.0`
 - **OpenIDM**: `7.5.0`
 
