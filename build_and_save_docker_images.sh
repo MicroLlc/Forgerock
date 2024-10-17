@@ -9,6 +9,7 @@ directories=(
     "$initial_dir/tomcat-9_0"
     "$initial_dir/openam"
     "$initial_dir/openidm"
+    "$initial_dir/opendj"
     "$initial_dir/markdown-viewer"
 
 )
@@ -20,6 +21,7 @@ image_names=(
     "$remote_registry/tomcat:9.0"
     "$remote_registry/openam:7.5.0"
     "$remote_registry/openidm:7.5.0"
+    "$remote_registry/opends:7.5.1"
     "$remote_registry/markdown-viewer:0.0.1"
 )
 

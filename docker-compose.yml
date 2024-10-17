@@ -8,7 +8,27 @@ services:
     image: forgerock-repo-local/openidm:7.5.0
     ports:
       - "8081:8081"
+  opends:
+    image: forgerock-repo-local/opends:7.5.1
+    ports:
+      - "8082:8080"    # HTTP
+      - "8443:8443"    # HTTPS
+      - "1389:1389"    # LDAP
+      - "1636:1636"    # LDAPS
+      - "4444:4444"    # Admin connector
+      - "8989:8989"    # Replication
+
+    environment:
+      LDAP_ADMIN_PASSWORD: secret
+      ROOT_USER_PASSWORD: rootsecret
+      DEPLOYMENT_ID_PASSWORD: password123-test
+      HOSTNAME: localhost
+    volumes:
+      - opendj_data:/opt/opendj  # Volume for persistent data
   markdown-viwer:
     image: forgerock-repo-local/markdown-viewer:0.0.1
     ports:
       - "8000:8000"
+
+volumes:
+  opendj_data:
